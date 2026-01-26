@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Potter Personal | Treino para iniciantes, emagrecimento e performance
+    </title>
+    <meta
+      name="description"
+      content="Treino personalizado para iniciantes, emagrecimento, qualidade de vida e performance. Acompanhamento de verdade e suporte no WhatsApp."
+    />
+
+    <!-- Social preview (ajuda no compartilhamento) -->
+    <meta property="og:title" content="Potter Personal" />
+    <meta
+      property="og:description"
+      content="Treino para iniciantes, emagrecimento, qualidade de vida e performance. Comece hoje."
+    />
+    <meta property="og:image" content="images/hero.jpg" />
+    <meta property="og:type" content="website" />
+
+    <!-- Performance: preload do hero -->
+    <link rel="preload" as="image" href="images/hero.jpg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!--
+      Hero section
+      --------------------------------------------------
+      The hero now uses a custom background image that already contains
+      the headline and supporting copy. To avoid visual clutter, all
+      internal hero text has been removed. Only a single call‑to‑action
+      button remains, positioned near the bottom of the hero image.
+    -->
+    <header class="hero">
+      <!-- Brand/logo (fica discreto, mas dá identidade) -->
+      <div class="brand" aria-label="Logo SegueoPotter">
+        <img
+          src="images/logo-gold.png"
+          alt="SegueoPotter Personal Trainer"
+          loading="eager"
+          decoding="async"
+        />
+      </div>
+      <!-- Optional overlay to improve contrast between the photo and the button -->
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <!-- Single, neon CTA right after the title area embedded in the image -->
+        <a
+          href="https://wa.me/5571981988973"
+          class="cta hero-cta blink wa-link"
+          data-wa-text="Quero botar o shape! Vim pelo site e quero começar agora."
+          rel="noopener"
+          >Quero botar o shape</a
+        >
+      </div>
+    </header>
+
+    <!-- Para diferentes perfis (nicho amplo, sem parecer genérico) -->
+    <section id="audiences" class="audiences reveal">
+      <h2>Treino para você</h2>
+      <p class="section-lead">
+        Não importa se você está começando agora, quer emagrecer, melhorar a
+        saúde ou evoluir a performance. A estratégia muda, o acompanhamento
+        continua.
+      </p>
+
+      <div class="audience-grid">
+        <article class="audience-card">
+          <div class="audience-media">
+            <img
+              src="images/iniciante.png"
+              alt="Treino para iniciantes"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Iniciantes</h3>
+          <p>
+            Nunca treinou ou vive se perdendo na academia? Eu te acompanho do
+            zero, com segurança e constância.
+          </p>
+          <a
+            class="cta small neon wa-link"
+            data-wa-text="Oi Potter! Sou iniciante. Quero começar do zero e preciso de acompanhamento."
+            href="#"
+            >Quero começar</a
+          >
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-media">
+            <img
+              src="images/emagrecimento.png"
+              alt="Treino para emagrecimento"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Emagrecimento</h3>
+          <p>
+            Treino inteligente pra perder gordura sem loucura. Ajuste fino,
+            consistência e suporte no WhatsApp.
+          </p>
+          <a
+            class="cta small neon wa-link"
+            data-wa-text="Oi Potter! Quero focar em emagrecimento. Me explica como funciona o acompanhamento."
+            href="#"
+            >Quero emagrecer</a
+          >
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-media">
+            <img
+              src="images/vida.png"
+              alt="Treino para qualidade de vida"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Qualidade de vida</h3>
+          <p>
+            Movimento, força e segurança em qualquer idade. Pra quem quer viver
+            melhor e sem dor no dia a dia.
+          </p>
+          <a
+            class="cta small neon wa-link"
+            data-wa-text="Oi Potter! Quero melhorar minha qualidade de vida. Consigo treinar com segurança?"
+            href="#"
+            >Quero saúde</a
+          >
+        </article>
+
+        <article class="audience-card">
+          <div class="audience-media">
+            <img
+              src="images/performance.png"
+              alt="Treino para performance"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h3>Performance</h3>
+          <p>
+            Força, estética e resultado com método. Treino pensado pra quem quer
+            subir o nível de verdade.
+          </p>
+          <a
+            class="cta small neon wa-link"
+            data-wa-text="Oi Potter! Quero evoluir minha performance. Bora montar um plano focado em resultado."
+            href="#"
+            >Quero evoluir</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <section id="plans" class="plans reveal">
+      <h2>Planos</h2>
+      <div class="plan-cards">
+        <article class="plan">
+          <h3>Plano Essencial</h3>
+          <p class="audience">Para iniciantes</p>
+          <ul>
+            <li>Perda de peso saudável</li>
+            <li>Acompanhamento semanal</li>
+            <li>Suporte via WhatsApp</li>
+          </ul>
+          <a
+            href="https://wa.me/5571981988973"
+            class="cta small neon wa-link"
+            data-wa-text="Quero o Plano Essencial. Me explica como funciona e valores, por favor."
+            rel="noopener"
+            >Quero este plano</a
+          >
+        </article>
+        <article class="plan featured">
+          <h3>Plano Evolução</h3>
+          <p class="audience">Para intermediários</p>
+          <ul>
+            <li>Treinos avançados</li>
+            <li>Acompanhamento diário</li>
+            <li>Plano nutricional</li>
+          </ul>
+          <a
+            href="https://wa.me/5571981988973"
+            class="cta small neon wa-link"
+            data-wa-text="Quero o Plano Evolução (mais escolhido). Me chama pra eu começar hoje."
+            rel="noopener"
+            >Quero este plano</a
+          >
+        </article>
+        <article class="plan">
+          <h3>Plano Elite</h3>
+          <p class="audience">Para avançados</p>
+          <ul>
+            <li>Resultados acelerados</li>
+            <li>Coaching individual</li>
+            <li>Acesso premium</li>
+          </ul>
+          <a
+            href="https://wa.me/5571981988973"
+            class="cta small neon wa-link"
+            data-wa-text="Quero o Plano Elite. Quero acompanhamento premium e mais individualizado."
+            rel="noopener"
+            >Quero este plano</a
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- Serviço avulso (objetivo claro, conversão fácil) -->
+    <section id="avulsa" class="service reveal">
+      <h2>Aula avulsa presencial</h2>
+      <p class="section-lead">
+        Quer testar antes de fechar um plano? Marca uma aula presencial e já sai
+        com direção certa.
+      </p>
+
+      <div class="service-card">
+        <div class="service-badge">Presencial</div>
+        <h3>Aula avulsa</h3>
+        <div class="service-price">R$ 150</div>
+        <ul class="service-list">
+          <li>Correção de execução (sem lesão, sem dúvida)</li>
+          <li>Treino ajustado pro seu objetivo</li>
+          <li>Orientação prática do que fazer depois</li>
+        </ul>
+        <a
+          href="#"
+          class="cta neon wa-link"
+          data-wa-text="Oi Potter! Quero agendar uma AULA AVULSA PRESENCIAL (R$150). Como funciona e quais horários?"
+          >Quero agendar</a
+        >
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials reveal">
+      <h2>Depoimentos</h2>
+      <p class="section-lead">
+        Aqui é simples: foto real do físico, nome e o que mudou. Sem história
+        inventada.
+      </p>
+
+      <div class="testimonial-container">
+        <!-- Basta trocar a imagem, nome e texto (layout já está pronto) -->
+        <article class="testimonial-card">
+          <img
+            class="t-photo"
+            src="images/testimonials/aluna-1.jpg"
+            alt="Foto do físico do aluno"
+            loading="lazy"
+            decoding="async"
+            onerror="this.src='images/testimonials/placeholder.png'; this.onerror=null;"
+          />
+          <div class="t-body">
+            <div class="t-name">CLEIDE SANTOS</div>
+            <div class="t-tag">Antes / depois</div>
+            <p class="t-quote">
+              “Ganhei mais definição e aumento na massa magra.”
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <img
+            class="t-photo"
+            src="images/testimonials/aluna-2.jpg"
+            alt="Foto do físico do aluno"
+            loading="lazy"
+            decoding="async"
+            onerror="this.src='images/testimonials/placeholder.png'; this.onerror=null;"
+          />
+          <div class="t-body">
+            <div class="t-name">REBECCA GUIMARÃES</div>
+            <div class="t-tag">Antes / depois</div>
+            <p class="t-quote">
+              “Defini mais / ganhei força / voltei a ter energia.”
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="faq reveal">
+      <h2>Perguntas Frequentes</h2>
+      <div class="accordion">
+        <details>
+          <summary>Serve mesmo pra iniciantes e quem tá parado?</summary>
+          <p>
+            Sim! Os treinos são adaptados para qualquer nível e idade. Avaliamos
+            suas necessidades e objetivos para um programa personalizado.
+          </p>
+        </details>
+        <details>
+          <summary>Atende presencial e online?</summary>
+          <p>
+            Oferecemos modalidades online e presencial, conforme sua preferência
+            e disponibilidade.
+          </p>
+        </details>
+        <details>
+          <summary>Preciso treinar em academia?</summary>
+          <p>
+            Não necessariamente. Os treinos podem ser feitos em casa ou em
+            academia, de acordo com seus recursos e objetivos.
+          </p>
+        </details>
+        <details>
+          <summary>Em quanto tempo vejo resultado?</summary>
+          <p>
+            Os resultados variam conforme dedicação, alimentação e
+            individualidade. Geralmente, mudanças são percebidas após 4 a 8
+            semanas.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal">
+      <h2>Contato</h2>
+
+      <p>
+        Pronto para transformar seu corpo? Fale comigo agora e dê o primeiro
+        passo!
+      </p>
+
+      <a
+        href="https://wa.me/5571981988973"
+        class="cta neon wa-link"
+        data-wa-text="Quero falar com você e entender qual plano é ideal pra mim."
+        rel="noopener"
+      >
+        Falar no WhatsApp
+      </a>
+
+      <p class="ig">
+        Instagram:
+        <a
+          class="ig-link"
+          href="https://instagram.com/segueopotter_personal"
+          target="_blank"
+          rel="noopener"
+        >
+          @segueopotter_personal
+        </a>
+      </p>
+
+      <p class="cref">CREF: <strong>019246-G/BA</strong></p>
+
+      <p class="microcopy">
+        Profissional certificado, anos de experiência e clientes satisfeitos.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2026 Potter Personal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- WhatsApp flutuante (aparece depois do hero) -->
+    <a
+      href="#"
+      class="whatsapp-float wa-link"
+      data-wa-text="Oi Potter! Vim pelo site. Quero tirar uma dúvida e começar."
+      aria-label="Falar no WhatsApp"
+      >WhatsApp</a
+    >
+
+    <script src="js/site.js"></script>
+  </body>
+</html>
