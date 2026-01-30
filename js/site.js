@@ -1,12 +1,12 @@
 /*
-  Potter Team landing (mobile-first)
+  Glúteo FitPro landing (mobile-first)
   - WhatsApp deep links with per-button message
   - Scroll reveal animations
   - Subtle interactions (no heavy libs)
 */
 
 (function () {
-  const PHONE = '5571981988973';
+  const PHONE = '55SEUNUMEROAQUI';
 
   function waUrl(text) {
     const base = `https://wa.me/${PHONE}`;
@@ -44,22 +44,6 @@
     nodes.forEach((n) => io.observe(n));
   }
 
-  // Optional: only one FAQ open at a time (clean + fast)
-  function initAccordion() {
-    const details = document.querySelectorAll('.accordion details');
-    if (!details.length) return;
-
-    details.forEach((d) => {
-      d.addEventListener('toggle', () => {
-        if (!d.open) return;
-        details.forEach((other) => {
-          if (other !== d) other.removeAttribute('open');
-        });
-      });
-    });
-  }
-
-  // WhatsApp flutuante: aparece depois que o usuário sai do hero
   function initFloatingWhatsApp() {
     const btn = document.querySelector('.whatsapp-float');
     const hero = document.querySelector('.hero');
@@ -80,7 +64,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initWhatsAppLinks();
     initReveal();
-    initAccordion();
     initFloatingWhatsApp();
   });
 })();
