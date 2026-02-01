@@ -1,12 +1,12 @@
 /*
-  Potter Team landing (mobile-first)
+  Glúteo FitPro landing (mobile-first)
   - WhatsApp deep links with per-button message
   - Scroll reveal animations
-  - Subtle interactions (no heavy libs)
+  - Premium background slots (troque em js/media.js)
 */
 
 (function () {
-  const PHONE = '5571981988973';
+  const PHONE = '55SEUNUMEROAQUI';
 
   function waUrl(text) {
     const base = `https://wa.me/${PHONE}`;
@@ -44,22 +44,37 @@
     nodes.forEach((n) => io.observe(n));
   }
 
-  // Optional: only one FAQ open at a time (clean + fast)
-  function initAccordion() {
-    const details = document.querySelectorAll('.accordion details');
-    if (!details.length) return;
+  function initPremiumBackgrounds() {
+    const media = window.MEDIA || {};
+    const sections = document.querySelectorAll('[data-premium-bg]');
 
-    details.forEach((d) => {
-      d.addEventListener('toggle', () => {
-        if (!d.open) return;
-        details.forEach((other) => {
-          if (other !== d) other.removeAttribute('open');
-        });
-      });
+    sections.forEach((section) => {
+      const key = section.getAttribute('data-premium-bg');
+      const config = media[key];
+      if (!config) return;
+
+      // Troque os paths em js/media.js.
+      section.style.setProperty('--bg-desktop', `url("${config.desktop}")`);
+      section.style.setProperty('--bg-mobile', `url("${config.mobile}")`);
+
+      const overlay = section.getAttribute('data-overlay');
+      if (overlay) section.style.setProperty('--overlay', overlay);
+
+      const positionDesktop = section.getAttribute('data-position-desktop');
+      if (positionDesktop) {
+        section.style.setProperty('--bg-position-desktop', positionDesktop);
+      }
+
+      const positionMobile = section.getAttribute('data-position-mobile');
+      if (positionMobile) {
+        section.style.setProperty('--bg-position-mobile', positionMobile);
+      }
+
+      const minHeight = section.getAttribute('data-min-height');
+      if (minHeight) section.style.setProperty('--bg-min-height', minHeight);
     });
   }
 
-  // WhatsApp flutuante: aparece depois que o usuário sai do hero
   function initFloatingWhatsApp() {
     const btn = document.querySelector('.whatsapp-float');
     const hero = document.querySelector('.hero');
@@ -79,8 +94,8 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     initWhatsAppLinks();
+    initPremiumBackgrounds();
     initReveal();
-    initAccordion();
     initFloatingWhatsApp();
   });
 })();
